@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CodeStart - Learn Coding for Beginners</title>
+<style>
+  /* Reset and basics */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+    /* Background with image of student coding on laptop from Unsplash */
+    background: 
+      linear-gradient(rgba(1, 22, 55, 0.85), rgba(1, 22, 55, 0.85)),
+      url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+    background-size: cover;
+  }
+  a {
+    color: #00d1ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background: #011627cc;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #00d1ff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: saturate(180%) blur(12px);
+  }
+  header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #00d1ff;
+    text-shadow: 0 0 10px #00d1ff, 0 0 20px #00d1ff;
+  }
+  header p {
+    margin-top: 0.3rem;
+    font-size: 1.15rem;
+    color: #a3cef1;
+    font-weight: 600;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 3rem auto 5rem auto;
+    padding: 0 1.5rem;
+    /* translucent background to separate content */
+    background: rgba(1, 22, 55, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 0 40px #00d1ffaa;
+  }
+  section.course {
+    background: rgba(1, 22, 55, 0.85);
+    margin-bottom: 2.5rem;
+    border-radius: 12px;
+    padding: 1.8rem 2rem;
+    box-shadow: 0 0 20px #00d1ff44;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  section.course:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00f2ffcc, 0 0 40px #00f2ffcc;
+  }
+  section.course h2 {
+    margin-top: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #00e2ff;
+    text-shadow: 0 0 5px #00e2ff99;
+  }
+  section.course p.intro {
+    font-size: 1.2rem;
+    color: #bce0fdcc;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  section.course p {
+    font-size: 1.1rem;
+    color: #d0e9ffdd;
+    margin-bottom: 1rem;
+  }
+  section.course ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #b0d8ffcc;
+  }
+  section.course ul li {
+    margin-bottom: 0.45rem;
+  }
+
+  .price-container {
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+    font-size: 2.8rem;
+    color: #00eaff;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px #00ffffbb;
+  }
+
+  .enroll-btn {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto 3rem auto;
+    background: #00d1ff;
+    color: #011627;
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: 0.85rem 1.7rem;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px #00d1ffaa;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  .enroll-btn:hover {
+    background: #00ffff;
+    box-shadow: 0 9px 25px #00d1ffdd;
+    transform: scale(1.04);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: #3792cbaa;
+    font-weight: 600;
+    border-top: 1px solid #3792cb33;
+    font-size: 0.9rem;
+    backdrop-filter: saturate(180%) blur(12px);
+    background: #011627cc;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .price-container {
+      font-size: 2rem;
+    }
+    section.course h2 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>CodeStart</h1>
+  <p>Begin Your Coding Journey — Python, JS, Java & More</p>
+</header>
+
+<main>
+  <section class="course" id="python">
+    <h2>Python Programming</h2>
+    <p class="intro">Python is a versatile, beginner-friendly programming language widely used in web development, data science, automation, and more.</p>
+    <p>Learn Python fundamentals designed for absolute beginners to get you coding confidently:</p>
+    <ul>
+      <li>Variables, Data Types & Expressions</li>
+      <li>Control Flow: if, else, for, while loops</li>
+      <li>Functions, Arguments & Return Values</li>
+      <li>Data Structures: Lists, Tuples, Dictionaries, Sets</li>
+      <li>File Handling, Exceptions & Modules</li>
+      <li>Basic Projects: Calculator, Number Games, Web Scraping</li>
+    </ul>
+  </section>
+
+  <section class="course" id="css">
+    <h2>CSS Styling</h2>
+    <p class="intro">CSS lets you bring life and style to your web pages through colors, layouts, and animations.</p>
+    <p>Master key CSS concepts essential for web design:</p>
+    <ul>
+      <li>Selectors, Properties & Values</li>
+      <li>Box Model: Margins, Borders, Padding</li>
+      <li>Positioning Techniques (Static, Relative, Absolute, Fixed)</li>
+      <li>Flexbox & CSS Grid for Responsive Layouts</li>
+      <li>Typography, Colors, Backgrounds</li>
+      <li>Transitions, Animations & Hover Effects</li>
+      <li>Media Queries: Responsive Design for Mobile & Desktop</li>
+    </ul>
+  </section>
+
+  <section class="course" id="java">
+    <h2>Java Programming</h2>
+    <p class="intro">Java is a powerful, object-oriented language widely used for building applications, Android apps, and large systems.</p>
+    <p>Cover the basics and foundation concepts:</p>
+    <ul>
+      <li>Java Syntax, Data Types & Variables</li>
+      <li>Control Flow Statements (if, switch, loops)</li>
+      <li>Methods & Parameters</li>
+      <li>Classes & Objects</li>
+      <li>Inheritance, Encapsulation & Polymorphism</li>
+      <li>Basic Java Collections: ArrayList, HashMap</li>
+      <li>Simple Console Programs & Projects</li>
+    </ul>
+  </section>
+
+  <section class="course" id="javascript">
+    <h2>JavaScript Coding</h2>
+    <p class="intro">JavaScript is the language of the web, adding interactivity and dynamic content to your websites.</p>
+    <p>Explore modern JavaScript essential for beginners:</p>
+    <ul>
+      <li>JavaScript Basics: Variables, Types, Operators</li>
+      <li>Functions, Arrow Functions & Callbacks</li>
+      <li>DOM Manipulation: Changing HTML & CSS dynamically</li>
+      <li>Event Listeners & Handlers</li>
+      <li>Asynchronous Programming: Promises, Async/Await</li>
+      <li>Basic Projects: To-Do List, Simple Games</li>
+      <li>Introduction to ES6+ Features</li>
+    </ul>
+  </section>
+
+  <section class="course" id="html">
+    <h2>HTML Markup</h2>
+    <p class="intro">HTML is the backbone of the web, structuring pages and content that browsers display.</p>
+    <p>Learn how to write semantic, accessible HTML:</p>
+    <ul>
+      <li>HTML Elements, Tags & Attributes</li>
+      <li>Document Structure & Nesting</li>
+      <li>Text Formatting, Lists & Tables</li>
+      <li>Forms, Input Elements & Buttons</li>
+      <li>Embedding Images, Video & Audio</li>
+      <li>Semantic HTML5 Elements & Accessibility</li>
+      <li>SEO Basics for Better Search Visibility</li>
+    </ul>
+  </section>
+
+  <section class="course" id="webdev">
+    <h2>Web Development Fundamentals</h2>
+    <p class="intro">Gain understanding of how the web works and essential tools web developers use.</p>
+    <p>Topics that build foundational web development knowledge:</p>
+    <ul>
+      <li>Basic Web Architecture & HTTP Protocol</li>
+      <li>Client-Server Model & Request/Response Cycle</li>
+      <li>Domain Names, Hosting & DNS Basics</li>
+      <li>Version Control Basics: Git & GitHub</li>
+      <li>Introduction to Frontend & Backend</li>
+      <li>Building & Deploying Simple Websites</li>
+      <li>Debugging & Browser DevTools Usage</li>
+    </ul>
+  </section>
+
+  <section class="course" id="ai-ml">
+    <h2>AI & Machine Learning Basics</h2>
+    <p class="intro">Dive into introductory AI and machine learning concepts using Python and popular libraries.</p>
+    <p>Learn the fundamentals of AI and ML:</p>
+    <ul>
+      <li>What is Artificial Intelligence & Machine Learning?</li>
+      <li>Python Libraries: NumPy, Pandas, Matplotlib, Scikit-learn</li>
+      <li>Data Preprocessing & Visualization</li>
+      <li>Supervised Learning: Regression & Classification</li>
+      <li>Unsupervised Learning: Clustering Basics</li>
+      <li>Model Evaluation & Validation Techniques</li>
+      <li>Hands-on Mini Projects & Exercises</li>
+    </ul>
+  </section>
+
+  <section class="course" id="additional-tech">
+    <h2>Additional Technologies & Topics</h2>
+    <p class="intro">Expand your learning with other important technologies used in programming and web.</p>
+    <p>These optional modules cover common supplements useful for beginners:</p>
+    <ul>
+      <li>Command Line Basics & Terminal Usage</li>
+      <li>Introduction to Databases: SQL Basics</li>
+      <li>Basic Networking Concepts</li>
+      <li>Introduction to APIs & RESTful Services</li>
+      <li>Package Managers: npm, pip basics</li>
+      <li>Basic Security Best Practices & HTTPS</li>
+    </ul>
+  </section>
+
+  <div class="price-container" aria-label="Course price">
+    Full Course Price: $20.35
+  </div>
+  <button class="enroll-btn" onclick="alert('Thank you for your interest! Enrollment feature coming soon.')">Enroll Now</button>
+</main>
+
+<footer>
+  &copy; 2024 CodeStart | Learn coding, build your future
+</footer>
+</body>
+</html>
+
